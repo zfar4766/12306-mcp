@@ -12,7 +12,7 @@ class QueryRequest(BaseModel):
 async def query_train(data: QueryRequest):
     # 这里只是模拟返回，你可以接入真正的 MCP Python 库
     return {
-        "from": data.from_,
+        "from": data.from,
         "to": data.to,
         "date": data.date,
         "trains": [
